@@ -7,14 +7,49 @@
     <title>Document</title>
 </head>
 <body>
-   <div id = "wrap">
-    <h1>test</h1>
-    <div id = "header" role ="banner">
-        <div id = "topSearchWrap" class = "header_inner">
-            <div id = "search_area" class = "search_area" style="border-color: #35b11c;"></div>
-        </div>
-    </div>
-   </div> 
+    <section>
+        <form action="https://search.naver.com/search.naver">
+            <div class="search">
+                <input type="text" name="query" value="">
+                <button type="submit">검색</button>
+            </div>
+        </form>
+    </section>
 
 </body>
 </html>
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.search {
+  width: 300px;
+  height: 100px;
+}
+.search input {
+  width: 80%;
+  height: 30px;
+  font-size: 18px;
+  border: none;
+  border-bottom: 1px black solid;
+}
+
+.search button {
+  font-size: 18px;
+  border: none;
+  background-color: green;
+  width: 50px;
+  height: 30px;
+  border-radius: 15px;
+  color: #fff;
+  cursor: pointer;
+}
